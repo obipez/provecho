@@ -1,7 +1,7 @@
 {
-  "name": "Provecho",
+  "name": "provecho",
   "version": "0.1.0",
-  "description": "Web Application using Python, NPM, Webpack, and React",
+  "description": "Provecho",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p --progress --config webpack.config.js",
@@ -9,23 +9,23 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress -d --config webpack.config.js --watch"
   },
-  "keywords": [
-    "fullstack",
-    "template",
-    "python",
-    "react",
-    "npm",
-    "webpack"
-  ],
   "author": "Obdulia Lopez",
   "license": "MIT",
-  "devDependencies": {
-    "webpack": "^4.17.0"
-  },
-  “babel”: {
-    “presets”: [ 
-      “es2015”,
-      “react”
+  "babel": {
+    "presets": [
+      "@babel/preset-env", 
+      "@babel/preset-react"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
   }
 }
